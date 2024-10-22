@@ -17,12 +17,12 @@ jobs:
     steps:
       # Step 1: run a standard checkout action
       - name: 查看目标仓库
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
 
       # Step 2: run the sync action
       - name: 同步上游更新
         id: sync
-        uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
+        uses: aormsby/Fork-Sync-With-Upstream-action@main
         with:
           upstream_sync_repo: 281677160/build-actions # 上游仓库路径
           upstream_sync_branch: main # 上游仓库分支
